@@ -1,0 +1,48 @@
+@import "vars"
+@import "fonts"
+@import "normalize"
+@import "reset"
+@import "nav"
+@import "button"
+@import "title"
+@import "card"
+@import "icons"
+
+@import "blocks/header"
+@import "blocks/hero"
+@import "blocks/_services"
+@import "blocks/_testimonial"
+@import "blocks/_story"
+@import "blocks/_facts"
+@import "blocks/_features"
+@import "blocks/_cta"
+@import "blocks/_works"
+@import "blocks/_footer"
+
+html
+    font-family: "Questrial-Regular", sans-serif
+    color: $text_color
+    font-weight: 400
+
+
+.container
+    max-width: 1140px
+    padding: 0 15px
+    margin: 0 auto
+
+.wrapper
+    &-dark
+        background-color: $text_color
+    &-light
+        background-color: $secondary_bg
+
+
+.flex
+    display: flex
+    &-col
+        display: flex
+        flex-direction: column
+
+
+main
+    background-color: $main_bg

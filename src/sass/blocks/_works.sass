@@ -1,0 +1,36 @@
+.works
+    max-width: 1100px
+    padding: 124px 20px
+    margin: 0 auto
+    &__item
+        gap: 34px
+        &-large1
+            grid-row: 1 / 3
+            grid-column: 1 / 3
+            height: 640px
+        &-small1
+            grid-column: 1 / 3
+        &-large2
+            grid-column: 3 / 5
+            grid-row: 2 / 4
+            height: 640px
+            align-self: end
+        &-small2
+            grid-column: 3 / 5
+            grid-row: 1
+    &__desc
+        gap: 10px
+        padding-left: 30px
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: 424px 1fr 424px
+
+        row-gap: 20px
+        column-gap: 70px
+
+        height: 1126px
+        margin-top: 90px
+        margin-bottom: 110px
+    &__btn
+        justify-content: center

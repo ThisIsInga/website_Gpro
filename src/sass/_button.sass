@@ -1,0 +1,37 @@
+.button
+    border-radius: 8px
+    border: none
+    letter-spacing: -0.5px
+    font-size: 17px
+    &-main
+        color: #fff
+        background-color: $main_color
+        padding: 20px 38px
+        &:hover
+            background-color: $success_hover
+            transition: all 0.3s
+    &-secondary
+        color: $main_color
+        background-color: #fff
+        
+        border: none        
+        padding: 18px 28px
+        &:hover
+            color: $success_hover
+            transition: all 0.3s
+    &-icon
+        padding-right: 40px
+        color: $main_color
+        background-color: transparent
+
+        position: relative
+        &::after
+            position: absolute
+            content: url("../img/icons/tail-right.svg")
+            right: 0
+
+            transition: all 0.3s
+        &:hover::after
+            right: -8px
+        
+        

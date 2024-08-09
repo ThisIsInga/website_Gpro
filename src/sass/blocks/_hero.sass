@@ -1,0 +1,15 @@
+.hero
+    gap: 170px
+    padding: 146px 0px
+    &__content
+        gap: 24px
+        align-items: start
+    &__img
+        z-index: 2
+        position: relative
+        &::after
+            z-index: -1
+            position: absolute
+            content: url("../img/icons/hero_decor.svg")
+            top: -40px
+            left: 110px
